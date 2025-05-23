@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">WiFi Cracker</string>
+    <string name="scan_networks">Scan for Networks</string>
+    <string name="select_password_file">Select Password File</string>
+    <string name="start_cracking">Start Cracking</string>
+    <string name="scanning">Scanning for networks...</string>
+    <string name="enable_wifi">Please enable WiFi</string>
+    <string name="select_networks_and_file">Please select networks and password file</string>
+    <string name="password_found">Password found for %1$s: %2$s</string>
+</resources> 

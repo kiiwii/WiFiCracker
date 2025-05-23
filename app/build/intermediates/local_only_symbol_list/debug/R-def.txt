@@ -1,0 +1,25 @@
+R_DEF: Internal format may change without notice
+local
+id btnScan
+id btnSelectPasswordFile
+id btnStartCracking
+id cbSelected
+id progressBar
+id rvNetworks
+id toolbar
+id tvSecurity
+id tvSignal
+id tvSsid
+layout activity_main
+layout item_network
+mipmap ic_launcher
+mipmap ic_launcher_round
+string app_name
+string enable_wifi
+string password_found
+string scan_networks
+string scanning
+string select_networks_and_file
+string select_password_file
+string start_cracking
+style Theme.WiFiCracker
