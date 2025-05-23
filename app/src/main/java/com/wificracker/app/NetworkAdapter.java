@@ -1,5 +1,6 @@
 package com.wificracker.app;
 
+import android.util.SparseBooleanArray;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -9,8 +10,9 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 import java.util.List;
 
-public class NetworkAdapter extends RecyclerView.Adapter<NetworkAdapter.NetworkViewHolder> {
-    private List<WiFiNetwork> networks;
+public class NetworkAdapter extends RecyclerView.Adapter<NetworkAdapter.ViewHolder> {
+    private final List<WiFiNetwork> networks;
+    private final SparseBooleanArray selectedItems;
     private final OnNetworkSelectedListener listener;
 
     public interface OnNetworkSelectedListener {
@@ -20,20 +22,28 @@ public class NetworkAdapter extends RecyclerView.Adapter<NetworkAdapter.NetworkV
     public NetworkAdapter(List<WiFiNetwork> networks, OnNetworkSelectedListener listener) {
         this.networks = networks;
         this.listener = listener;
+        this.selectedItems = new SparseBooleanArray();
     }
 
     @NonNull
     @Override
-    public NetworkViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View view = LayoutInflater.from(parent.getContext())
-            .inflate(R.layout.item_network, parent, false);
-        return new NetworkViewHolder(view);
+    public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_network, parent, false);
+        return new ViewHolder(view);
     }
 
     @Override
-    public void onBindViewHolder(@NonNull NetworkViewHolder holder, int position) {
+    public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
         WiFiNetwork network = networks.get(position);
-        holder.bind(network);
+        holder.tvSSID.setText(network.getSSID());
+        holder.tvBSSID.setText(network.getBSSID());
+        holder.checkBox.setChecked(selectedItems.get(position));
+        holder.itemView.setOnClickListener(v -> {
+            boolean isSelected = !selectedItems.get(position);
+            selectedItems.put(position, isSelected);
+            holder.checkBox.setChecked(isSelected);
+            listener.onNetworkSelected(network, isSelected);
+        });
     }
 
     @Override
@@ -41,37 +51,15 @@ public class NetworkAdapter extends RecyclerView.Adapter<NetworkAdapter.NetworkV
         return networks.size();
     }
 
-    public void updateNetworks(List<WiFiNetwork> newNetworks) {
-        this.networks = newNetworks;
-        notifyDataSetChanged();
-    }
+    static class ViewHolder extends RecyclerView.ViewHolder {
+        TextView tvSSID, tvBSSID;
+        CheckBox checkBox;
 
-    class NetworkViewHolder extends RecyclerView.ViewHolder {
-        private final TextView tvSsid;
-        private final TextView tvSignal;
-        private final TextView tvSecurity;
-        private final CheckBox cbSelected;
-
-        NetworkViewHolder(@NonNull View itemView) {
+        ViewHolder(View itemView) {
             super(itemView);
-            tvSsid = itemView.findViewById(R.id.tvSsid);
-            tvSignal = itemView.findViewById(R.id.tvSignal);
-            tvSecurity = itemView.findViewById(R.id.tvSecurity);
-            cbSelected = itemView.findViewById(R.id.cbSelected);
-        }
-
-        void bind(WiFiNetwork network) {
-            tvSsid.setText(network.getSsid());
-            tvSignal.setText(String.format("Signal: %d dBm", network.getSignalStrength()));
-            tvSecurity.setText(network.getCapabilities());
-            cbSelected.setChecked(network.isSelected());
-
-            cbSelected.setOnCheckedChangeListener((buttonView, isChecked) -> {
-                network.setSelected(isChecked);
-                if (listener != null) {
-                    listener.onNetworkSelected(network, isChecked);
-                }
-            });
+            tvSSID = itemView.findViewById(R.id.tvSSID);
+            tvBSSID = itemView.findViewById(R.id.tvBSSID);
+            checkBox = itemView.findViewById(R.id.checkBox);
         }
     }
 } 

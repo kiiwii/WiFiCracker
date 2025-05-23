@@ -10,6 +10,14 @@ public class WiFiNetwork implements Parcelable {
     private String capabilities;
     private boolean isSelected;
 
+    public WiFiNetwork(String ssid, String bssid) {
+        this.ssid = ssid;
+        this.bssid = bssid;
+        this.signalStrength = 0;
+        this.capabilities = "";
+        this.isSelected = false;
+    }
+
     public WiFiNetwork(String ssid, String bssid, int signalStrength, String capabilities) {
         this.ssid = ssid;
         this.bssid = bssid;
@@ -38,11 +46,11 @@ public class WiFiNetwork implements Parcelable {
         }
     };
 
-    public String getSsid() {
+    public String getSSID() {
         return ssid;
     }
 
-    public String getBssid() {
+    public String getBSSID() {
         return bssid;
     }
 

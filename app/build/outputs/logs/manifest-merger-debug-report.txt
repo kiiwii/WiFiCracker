@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /home/user/Documents/Cursor/WiFiCracker/app/src/main/AndroidManifest.xml:2:1-39:12
-INJECTED from /home/user/Documents/Cursor/WiFiCracker/app/src/main/AndroidManifest.xml:2:1-39:12
-INJECTED from /home/user/Documents/Cursor/WiFiCracker/app/src/main/AndroidManifest.xml:2:1-39:12
-INJECTED from /home/user/Documents/Cursor/WiFiCracker/app/src/main/AndroidManifest.xml:2:1-39:12
+ADDED from /home/user/Documents/Cursor/WiFiCracker/app/src/main/AndroidManifest.xml:2:1-37:12
+INJECTED from /home/user/Documents/Cursor/WiFiCracker/app/src/main/AndroidManifest.xml:2:1-37:12
+INJECTED from /home/user/Documents/Cursor/WiFiCracker/app/src/main/AndroidManifest.xml:2:1-37:12
+INJECTED from /home/user/Documents/Cursor/WiFiCracker/app/src/main/AndroidManifest.xml:2:1-37:12
 MERGED from [com.google.android.material:material:1.11.0] /home/user/.gradle/caches/transforms-3/99dc24b8086e9e02f60cbc0643cdc897/transformed/material-1.11.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] /home/user/.gradle/caches/transforms-3/1f371f754bd6786f9a76f8e2fd18482b/transformed/constraintlayout-2.1.4/AndroidManifest.xml:2:1-11:12
 MERGED from [androidx.appcompat:appcompat-resources:1.6.1] /home/user/.gradle/caches/transforms-3/6bb17d2c54c905aa7b0c5b5bfe3537f3/transformed/jetified-appcompat-resources-1.6.1/AndroidManifest.xml:17:1-22:12
@@ -70,17 +70,9 @@ uses-permission#android.permission.ACCESS_COARSE_LOCATION
 ADDED from /home/user/Documents/Cursor/WiFiCracker/app/src/main/AndroidManifest.xml:8:5-81
 	android:name
 		ADDED from /home/user/Documents/Cursor/WiFiCracker/app/src/main/AndroidManifest.xml:8:22-78
-uses-permission#android.permission.READ_EXTERNAL_STORAGE
-ADDED from /home/user/Documents/Cursor/WiFiCracker/app/src/main/AndroidManifest.xml:9:5-80
-	android:name
-		ADDED from /home/user/Documents/Cursor/WiFiCracker/app/src/main/AndroidManifest.xml:9:22-77
-uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
-ADDED from /home/user/Documents/Cursor/WiFiCracker/app/src/main/AndroidManifest.xml:10:5-81
-	android:name
-		ADDED from /home/user/Documents/Cursor/WiFiCracker/app/src/main/AndroidManifest.xml:10:22-78
 application
-ADDED from /home/user/Documents/Cursor/WiFiCracker/app/src/main/AndroidManifest.xml:12:5-38:19
-INJECTED from /home/user/Documents/Cursor/WiFiCracker/app/src/main/AndroidManifest.xml:12:5-38:19
+ADDED from /home/user/Documents/Cursor/WiFiCracker/app/src/main/AndroidManifest.xml:10:5-36:19
+INJECTED from /home/user/Documents/Cursor/WiFiCracker/app/src/main/AndroidManifest.xml:10:5-36:19
 MERGED from [com.google.android.material:material:1.11.0] /home/user/.gradle/caches/transforms-3/99dc24b8086e9e02f60cbc0643cdc897/transformed/material-1.11.0/AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.material:material:1.11.0] /home/user/.gradle/caches/transforms-3/99dc24b8086e9e02f60cbc0643cdc897/transformed/material-1.11.0/AndroidManifest.xml:22:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] /home/user/.gradle/caches/transforms-3/1f371f754bd6786f9a76f8e2fd18482b/transformed/constraintlayout-2.1.4/AndroidManifest.xml:9:5-20
@@ -102,49 +94,49 @@ MERGED from [androidx.startup:startup-runtime:1.1.1] /home/user/.gradle/caches/t
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.9.0] /home/user/.gradle/caches/transforms-3/a309491863f1cad1388d82071cb60f8c/transformed/core-1.9.0/AndroidManifest.xml:28:18-86
 	android:supportsRtl
-		ADDED from /home/user/Documents/Cursor/WiFiCracker/app/src/main/AndroidManifest.xml:17:9-35
+		ADDED from /home/user/Documents/Cursor/WiFiCracker/app/src/main/AndroidManifest.xml:15:9-35
 	android:label
-		ADDED from /home/user/Documents/Cursor/WiFiCracker/app/src/main/AndroidManifest.xml:15:9-41
+		ADDED from /home/user/Documents/Cursor/WiFiCracker/app/src/main/AndroidManifest.xml:13:9-41
 	android:roundIcon
-		ADDED from /home/user/Documents/Cursor/WiFiCracker/app/src/main/AndroidManifest.xml:16:9-54
+		ADDED from /home/user/Documents/Cursor/WiFiCracker/app/src/main/AndroidManifest.xml:14:9-54
 	android:icon
-		ADDED from /home/user/Documents/Cursor/WiFiCracker/app/src/main/AndroidManifest.xml:14:9-43
+		ADDED from /home/user/Documents/Cursor/WiFiCracker/app/src/main/AndroidManifest.xml:12:9-43
 	android:allowBackup
-		ADDED from /home/user/Documents/Cursor/WiFiCracker/app/src/main/AndroidManifest.xml:13:9-35
+		ADDED from /home/user/Documents/Cursor/WiFiCracker/app/src/main/AndroidManifest.xml:11:9-35
 	android:theme
-		ADDED from /home/user/Documents/Cursor/WiFiCracker/app/src/main/AndroidManifest.xml:18:9-49
+		ADDED from /home/user/Documents/Cursor/WiFiCracker/app/src/main/AndroidManifest.xml:16:9-49
 activity#com.wificracker.app.MainActivity
-ADDED from /home/user/Documents/Cursor/WiFiCracker/app/src/main/AndroidManifest.xml:20:9-27:20
+ADDED from /home/user/Documents/Cursor/WiFiCracker/app/src/main/AndroidManifest.xml:18:9-25:20
 	android:exported
-		ADDED from /home/user/Documents/Cursor/WiFiCracker/app/src/main/AndroidManifest.xml:22:13-36
+		ADDED from /home/user/Documents/Cursor/WiFiCracker/app/src/main/AndroidManifest.xml:20:13-36
 	android:name
-		ADDED from /home/user/Documents/Cursor/WiFiCracker/app/src/main/AndroidManifest.xml:21:13-41
+		ADDED from /home/user/Documents/Cursor/WiFiCracker/app/src/main/AndroidManifest.xml:19:13-41
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from /home/user/Documents/Cursor/WiFiCracker/app/src/main/AndroidManifest.xml:23:13-26:29
+ADDED from /home/user/Documents/Cursor/WiFiCracker/app/src/main/AndroidManifest.xml:21:13-24:29
 action#android.intent.action.MAIN
-ADDED from /home/user/Documents/Cursor/WiFiCracker/app/src/main/AndroidManifest.xml:24:17-69
+ADDED from /home/user/Documents/Cursor/WiFiCracker/app/src/main/AndroidManifest.xml:22:17-69
 	android:name
-		ADDED from /home/user/Documents/Cursor/WiFiCracker/app/src/main/AndroidManifest.xml:24:25-66
+		ADDED from /home/user/Documents/Cursor/WiFiCracker/app/src/main/AndroidManifest.xml:22:25-66
 category#android.intent.category.LAUNCHER
-ADDED from /home/user/Documents/Cursor/WiFiCracker/app/src/main/AndroidManifest.xml:25:17-77
+ADDED from /home/user/Documents/Cursor/WiFiCracker/app/src/main/AndroidManifest.xml:23:17-77
 	android:name
-		ADDED from /home/user/Documents/Cursor/WiFiCracker/app/src/main/AndroidManifest.xml:25:27-74
+		ADDED from /home/user/Documents/Cursor/WiFiCracker/app/src/main/AndroidManifest.xml:23:27-74
 service#com.wificracker.app.service.WiFiScannerService
-ADDED from /home/user/Documents/Cursor/WiFiCracker/app/src/main/AndroidManifest.xml:29:9-32:40
+ADDED from /home/user/Documents/Cursor/WiFiCracker/app/src/main/AndroidManifest.xml:27:9-30:40
 	android:enabled
-		ADDED from /home/user/Documents/Cursor/WiFiCracker/app/src/main/AndroidManifest.xml:31:13-35
+		ADDED from /home/user/Documents/Cursor/WiFiCracker/app/src/main/AndroidManifest.xml:29:13-35
 	android:exported
-		ADDED from /home/user/Documents/Cursor/WiFiCracker/app/src/main/AndroidManifest.xml:32:13-37
+		ADDED from /home/user/Documents/Cursor/WiFiCracker/app/src/main/AndroidManifest.xml:30:13-37
 	android:name
-		ADDED from /home/user/Documents/Cursor/WiFiCracker/app/src/main/AndroidManifest.xml:30:13-55
+		ADDED from /home/user/Documents/Cursor/WiFiCracker/app/src/main/AndroidManifest.xml:28:13-55
 service#com.wificracker.app.service.PasswordCrackerService
-ADDED from /home/user/Documents/Cursor/WiFiCracker/app/src/main/AndroidManifest.xml:34:9-37:40
+ADDED from /home/user/Documents/Cursor/WiFiCracker/app/src/main/AndroidManifest.xml:32:9-35:40
 	android:enabled
-		ADDED from /home/user/Documents/Cursor/WiFiCracker/app/src/main/AndroidManifest.xml:36:13-35
+		ADDED from /home/user/Documents/Cursor/WiFiCracker/app/src/main/AndroidManifest.xml:34:13-35
 	android:exported
-		ADDED from /home/user/Documents/Cursor/WiFiCracker/app/src/main/AndroidManifest.xml:37:13-37
+		ADDED from /home/user/Documents/Cursor/WiFiCracker/app/src/main/AndroidManifest.xml:35:13-37
 	android:name
-		ADDED from /home/user/Documents/Cursor/WiFiCracker/app/src/main/AndroidManifest.xml:35:13-59
+		ADDED from /home/user/Documents/Cursor/WiFiCracker/app/src/main/AndroidManifest.xml:33:13-59
 uses-sdk
 INJECTED from /home/user/Documents/Cursor/WiFiCracker/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /home/user/Documents/Cursor/WiFiCracker/app/src/main/AndroidManifest.xml
